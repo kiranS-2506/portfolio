@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <h2 class="logo"><span class="l">K</span>iran Seru.</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="container">
+
+                <div class="head-text head-content">
+                    <h1>Hi, I'm <span>kiran</span></h1>
+                    <p>And I am <span class="type"> </span></p>
+                    <div class="btn-group">
+                        <button id="hireMeButton" class="btn btn-secondary">Hire me</button>
+                        <!-- Popup Container -->
+                        <div id="popup" class="popup">
+                            <div class="popup-content">
+                                <span class="close-btn" id="closePopup">&times;</span>
+                                <h2>Connect with Me on</h2>
+                                <a href="https://www.linkedin.com/in/kiran-seru-435164349/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="./images/linkedin-logo.svg" alt="LinkedIn Logo" class="linkedin-logo">
+                                </a>
+                            </div>
+                        </div>
+
+                        <button id="downloadCVButton" class="btn btn-primary">Download cv</button>
+                        <!-- Popup Container for CV Download -->
+
+                    </div>
+                </div>
+
+                <div class="head-img">
+                    <img src="./images/2590506-Photoroom.png" alt="">
+                </div>
+
+                <ul class="hero-social-list">
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/kiran-seru-435164349/" target="_blank"
+                            rel="noopener noreferrer" class="hero-social-link">
+                            <!-- <i class="bi bi-linkedin"></i> -->
+                            <i class="fa-brands fa-linkedin"></i>
+                            <div class="tooltip">Linkedin</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/kiranS-2506" target="_blank" rel="noopener noreferrer"
+                            class="hero-social-link">
+                            <!-- <i class="bi bi-github"></i> -->
+                            <i class="fa-brands fa-github"></i>
+                            <div class="tooltip">GitHub</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.hackerrank.com/profile/kiran2506" target="_blank" rel="noopener noreferrer"
+                            class="hero-social-link">
+                            <!-- <i class="fa-solid fa-bars"></i> -->
+                            <i class="fa-brands fa-hackerrank"></i>
+                            <div class="tooltip">HackerRank</div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-section">
+                <div class="about-me">
+                   <h2 class="headings">About</h2>
+                    <p>I am an Aspiring Full Stack Python Developer with experience in Python, Django, Flask, Angular, andJavaScript. I am passionate about building dynamic,user-friendly web applications that deliver value to users.</p>
+                </div>
+    
+                <div class="skills section-content" id="skills">
+                    <div class="section-content">
+                        <h2 class="headings">SkillS</h2>
+                    </div>
+    
+                    <!-- Skills Cards -->
+                    <div class="skills-container">
+                        <!-- Programming Languages -->
+                        <div class="skill-card languages">
+                            <p>Python</p>
+                        </div>
+                        <div class="skill-card languages">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-card languages">
+                            <p>TypeScript</p>
+                        </div>
+                        <div class="skill-card languages">
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill-card languages">
+                            <P>CSS</P>
+                        </div>
+    
+                        <!-- Frameworks -->
+                        <div class="skill-card frameworks">
+                            <P>Flask</P>
+                        </div>
+                        <div class="skill-card frameworks">
+                            <P>Django </P>
+                        </div>
+                        <div class="skill-card frameworks">
+                            <P>Angular</P>
+                        </div>
+                        <div class="skill-card frameworks">
+                            <P>Bootstrap</P>
+                        </div>
+    
+                        <!-- Databases -->
+                        <div class="skill-card databases">
+                            <P>MongoDB</P>
+                        </div>
+                        <div class="skill-card databases">
+                            <P>MySQL</P>
+                        </div>
+    
+                        <!-- Tools -->
+    
+                        <div class="skill-card tools">
+                            <P>Git</P>
+    
+                        </div>
+                        <div class="skill-card tools">
+                            <P>GitHub</P>
+                        </div>
+    
+                        <!-- Cloud -->
+                        <div class="skill-card cloud">
+                            <P>AWS</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+        </section>
+
+
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+
+        var typed = new Typed('.type', {
+            strings: ['Full Stack Python Developer.', 'Data Analysis'],
+            typeSpeed: 60,
+            backSpeed: 60,
+            backDelay: 3000,
+            startDelay: 100,
+            loop: true
+        });
+
+    </script>
+
+</body>
+
+</html>
