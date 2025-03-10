@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Mono', monospace; 
+    font-family: 'Roboto Mono', monospace;
     box-sizing: border-box;
 }
 
@@ -21,12 +21,11 @@ body {
     background: #000;
     color: #fff;
     transition: 0.25s ease-in-out;
-
 }
 
 header {
     padding-inline: 10% 10%;
-    background-color: #121212;;
+    background-color: #121212;
 }
 
 #navbar {
@@ -36,29 +35,26 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 10px;
-
 }
 
 header .logo {
     font-size: 40px;
-    font-family: 'Bebas Neue', sans-serif;
-    color: #00FF00;
+    font-family: 'Montserrat', sans-serif;
+    color: #1E90FF;
 }
 
 header .l {
     color: #00FFFF;
 }
 
-
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-
 }
 
 nav ul li a {
-    color: #ddd;;
+    color: #ddd;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -68,12 +64,11 @@ header nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #00FFFF;;
+    background: #00FFFF;
     position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
-
 }
 
 header nav ul li a:hover::after {
@@ -117,7 +112,6 @@ header nav ul li a:hover::after {
     gap: 10px;
     flex-shrink: 0;
 }
-
 
 .head-img {
     flex-shrink: 0;
@@ -182,13 +176,12 @@ header nav ul li a:hover::after {
 .hero-social-link {
     display: block;
     margin-bottom: 15px;
-    color:#00FFFF;;
+    color:#00FFFF;
     font-size: 1.5rem;
     text-decoration: none;
     transition: color 0.3s;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
 
 .hero-social-link i {
     font-size: 1.5rem;
@@ -200,6 +193,7 @@ header nav ul li a:hover::after {
     --trans-x: 0;
     opacity: 1;
 }
+
 .headings{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 32px;
@@ -212,7 +206,6 @@ header nav ul li a:hover::after {
 
 .about-content{
     padding-inline: 10% 10%;
-
 }
 
 .section-subtitle {
@@ -220,7 +213,7 @@ header nav ul li a:hover::after {
     text-decoration: underline;
 }
 
-
+/* Popup Styles */
 .popup {
     display: none;
     position: fixed;
@@ -265,17 +258,7 @@ header nav ul li a:hover::after {
     transform: scale(1.1);
 }
 
-.section-content {
-    padding-inline: 10px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    max-width: fit-content;
-    text-align: center;
-
-}
+/* About Section */
 .about{
     width:100%;
     height: 400px;
@@ -285,6 +268,7 @@ header nav ul li a:hover::after {
     align-items: center;
     justify-content: center;
 }
+
 .about-me{
     max-width: 30%;
     text-align:justify;
@@ -293,10 +277,9 @@ header nav ul li a:hover::after {
     font-weight: 300;
     line-height:1.5;
     word-spacing:-0.5px;
-
 }
-.about-section{
 
+.about-section{
     max-width: 75%;
     display: flex;
     justify-content: center;
@@ -315,22 +298,11 @@ header nav ul li a:hover::after {
     text-align: center;
 }
 
-/* Section Content for Skills - Center everything */
-.section-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    max-width: 100%;
-}
-
 /* Skills Section Heading */
 .skills-section {
     text-align: center;
     font-family: "Saira Stencil One", sans-serif;
 }
-
 
 /* Skills Cards Layout */
 .skills-container {
@@ -357,29 +329,33 @@ header nav ul li a:hover::after {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-
 .skill-card:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+/* Projects Section */
 .projects-section{
-    background-color: #121212;;
+    background-color: #121212;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap:20px;
     justify-content: center;
-
     height: 500px;
 }
+
 .projects-text{
     text-align: center;
 }
+
 .project{
     display: flex;
     justify-content: center;
     align-items: center;
     gap:20px;
 }
+
 .mywork{
     width: 225px;
     height:300px;
@@ -393,13 +369,13 @@ header nav ul li a:hover::after {
     align-items: center;
     box-shadow: 0 4px 6px #373737;
     transition: transform 0.3s, box-shadow 0.3s;
-
 }
+
 .mywork:hover{
     transform: scale(1.02);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-
 }
+
 .icons{
     display: none;
     position: absolute;
@@ -407,28 +383,30 @@ header nav ul li a:hover::after {
     left: 50%;
     transform: translate(-50%, -50%);
     gap:10px;
-
-
 }
+
 .proj-icons{
     padding: 10px;
     font-size: 20px;
     font-weight: 800;
     border: 1px solid black;
-    color: #000;;
+    color: #000;
     background-color: #00ffff;
     border: 1px solid #00FFFF;
     border-radius: 50%;
     transition: transform 1s, box-shadow 0.3s;
 }
+
 .mywork:hover .icons{
     display: flex;
 }
+
 .proj-icons:hover{
     transform: scale(1.02);
     background-color: #00FF00;
     color:#000;
 }
+
 .proj-head{
     margin-bottom: 10px;
     margin-top: 10px;
@@ -437,11 +415,212 @@ header nav ul li a:hover::after {
     margin: 10 0 10px;
     font-weight: 400;
     letter-spacing: -1px;
-
 }
+
 .proj-img{
     width:200px;
     height: 150px;
     border-bottom: 1px solid gray;
     padding-bottom: 2px;
 }
+.start-icon,
+.end-icon {
+    font-size: 2.5rem;
+    color: #b6b6b6;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timeline {
+    position: relative;
+    /* max-width: 800px; */
+    margin: 0 auto;
+}
+/* Experience Section */
+.professional-jou{
+    padding-inline: 10% 10%;
+}
+.experience-section {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #1E90FF;
+    padding: 20px 0;
+}
+
+/* Timeline */
+.experience-roadmap {
+    padding-block: 40px;
+    background-color: #000;
+    position: relative;
+}
+
+/* Central Line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    background: #b6b6b6;
+}
+
+/* Timeline Items */
+.timeline-item {
+    display: flex;
+    position: relative;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Alternate Timeline Item Direction */
+.timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 10;
+    width: 15px;
+    height: 15px;
+    background: #b6b6b6;
+    border: 4px solid #121212;
+    border-radius: 50%;
+    box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.1);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    background: #121212;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: 30px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-right: 30px;
+}
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .company-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .company-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #004500; /* Changed to Gold */
+    margin: 0;
+  }
+  
+  .company-name a {
+    text-decoration: none;
+    color: #24a0ff;
+    transition: color 0.3s ease;
+  }
+  
+  .company-name a:hover {
+    color: #FF6347; /* Cyan */
+  }
+  
+  .role-title {
+    font-size: 1.1rem;
+    color: #00CED1; /* Cyan */
+    font-weight: 700;
+    margin: 5px 0 0 0;
+  }
+ .work-details {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    color: #ddd; /* Light gray */
+    line-height: 1.5;
+  }
+  
+  .timeline-duration {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #aaa; /* Darker gray */
+    text-align: right;
+  }
+  
+  .timeline-content li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    font-size: 0.9rem;
+    color: #ddd; /* Light gray */
+    line-height: 1.6;
+  }
+  
+  .timeline-content li:before {
+    content: '\2022';
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00FFFF; /* Cyan */
+  }
+  
+  .timeline-content li:hover {
+    background-color: #121212; /* Dark gray */
+    padding-left: 35px;
+    transition: padding-left 0.3s ease, background-color 0.3s ease;
+  }
+/* Education */
+.education {
+    background: #121212;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.1);
+    margin-bottom: 50px;
+    color: #ddd;
+    font-family: 'Fira Code', monospace;
+}
+
+.university-name {
+    font-size: 1.1rem;
+    color:#FFD700;
+    margin-bottom: 5px;
+}
+
+.edu-description {
+    font-size: 0.9rem;
+    color: #aaa;
+    line-height: 1.5;
+    font-style: italic;
+    font-family: 'Fira Code', monospace;
+}
+
+
+
+
