@@ -17,17 +17,17 @@
         <nav id="navbar">
             <h2 class="logo"><span class="l">K</span>iran.</h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
         </nav>
     </header>
     <main>
-        <section class="section1">
+        <section class="section1" id="home">
             <div class="container">
 
                 <div class="head-text head-content">
@@ -47,7 +47,9 @@
                             </div>
                         </div>
 
-                        <button id="downloadCVButton" class="btn btn-primary">Download cv</button>
+                        <button id="downloadCVButton" class="btn btn-primary"><a
+                                href="https://drive.google.com/file/d/1U8bRYNIrMQjYW2o5gUhXgt5ZbriBtGL1/view">Download
+                                cv</a></button>
                         <!-- Popup Container for CV Download -->
 
                     </div>
@@ -162,11 +164,10 @@
                     </div>
                 </div>
             </div>
-            <div class="education"></div>
 
         </section>
 
-        <section class="projects-section">
+        <section class="projects-section" id="projects">
             <h2 class="headings projects-text">Projects</h2>
             <div class="project">
                 <div class="mywork">
@@ -234,18 +235,14 @@
 
 
         </section>
-        <section class="experience-roadmap section-content" id="experience">
+        <section class="experience-roadmap section-content" id="education">
             <div class="professional-jou">
                 <h2 class="headings experience-section">My Professional Journey</h2>
-
-                <!-- Start Icon -->
                 <div class="start-icon">
-                    <!-- <i class="bi bi-code-slash"></i> -->
                     <i class="fa-solid fa-laptop-code"></i>
                 </div>
 
                 <div class="timeline">
-                    <!-- Cognicor -->
                     <div class="timeline-item">
                         <div class="timeline-content">
                             <div class="company-header">
@@ -270,18 +267,16 @@
                                     workflow.</li>
                                 <li>Applied Django framework to build and optimize web application features, aligning
                                     with Samanyastra's mission.</li>
-                                <li>Supported Samanyastra's goal of democratizing technology education by creating
-                                    accessible learning resources.</li>
                             </ul>
                             <div class="timeline-duration">Feb 2025 - Present</div>
                         </div>
                     </div>
 
-                    <!-- TCS -->
                     <div class="timeline-item">
                         <div class="timeline-content">
                             <div class="company-header">
-                                <img src="images/nareshit.png" alt="natesh it Logo" class="company-logo" loading="lazy" />
+                                <img src="images/nareshit.png" alt="natesh it Logo" class="company-logo"
+                                    loading="lazy" />
                                 <div>
                                     <h4 class="company-name">
                                         <a href="https://nareshit.com/" target="_blank" rel="noopener noreferrer">
@@ -293,8 +288,11 @@
                             </div>
                             <ul class="work-details">
                                 <li>Received comprehensive training in both front-end and back-end web development.</li>
-                                <li>Specialized in Django for back-end, and HTML/Bootstrap for front-end, with SQLite database.</li>
-                                <li>Applied this knowledge to develop "We Store," a functional e-commerce platform with features including product browsing, cart functionality, order placement, and user authentication.</li>
+                                <li>Specialized in Django for back-end, and HTML/Bootstrap for front-end, with SQLite
+                                    database.</li>
+                                <li>Applied this knowledge to develop "We Store," a functional e-commerce platform with
+                                    features including product browsing, cart functionality, order placement, and user
+                                    authentication.</li>
                                 <li>Designed a responsive UI using HTML and Bootstrap.</li>
                                 <li>Utilized Django ORM to manage data handling and database interactions.</li>
                                 <li>Acquired hands-on experience in the software development lifecycle.</li>
@@ -316,13 +314,12 @@
                     <div class="timeline-item">
                         <div class="timeline-content">
                             <div class="company-header">
-                                <img src="images/rgukt.png" alt="University Of rgukt"
-                                    class="company-logo" />
+                                <img src="images/rgukt.png" alt="University Of rgukt" class="company-logo" />
                                 <div>
                                     <h4 class="company-name">
                                         <a href="https://rguktn.ac.in/" target="_blank" rel="noopener noreferrer">
                                             Rajiv Gandhi University of Knowledge Technologies - Nuzvid
-                                            
+
                                         </a>
                                     </h4>
                                     <h5 class="role-title">Btech - Mechanical Engineering
@@ -335,13 +332,12 @@
                     <div class="timeline-item">
                         <div class="timeline-content">
                             <div class="company-header">
-                                <img src="images/rgukt.png" alt="University Of rgukt"
-                                    class="company-logo" />
+                                <img src="images/rgukt.png" alt="University Of rgukt" class="company-logo" />
                                 <div>
                                     <h4 class="company-name">
                                         <a href="https://rguktn.ac.in/" target="_blank" rel="noopener noreferrer">
                                             Rajiv Gandhi University of Knowledge Technologies - Nuzvid
-                                            
+
                                         </a>
                                     </h4>
                                     <h5 class="role-title">Pre University Course
@@ -353,14 +349,34 @@
                     </div>
                 </div>
         </section>
+        <section class="contact" id="contact">
+            <h2 class="headings contact-headings">Contact</h2>
+            <div class="contact-section">
+                <div class="quick-contact">
+                    <p>I'd love to collaborate. Please reach out with any opportunities.</p>
+                    <a href="tel:+918555944549"><i class="fa-solid fa-phone"></i> +918555944549</a>
+                    <a href="mailto:kiranseru25@gmail.com"><i class="fa-solid fa-envelope"></i>
+                        kiranseru25@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/kiran-seru-435164349/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                </div>
+                <form action="/your-form-handler" method="post" class="contact-me">
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Enter Your email" required>
 
+                    <textarea name="message" id="message" placeholder="Your message"></textarea>
 
-        </div>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </section>
+
 
 
 
 
     </main>
+    <script src="./script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
 
