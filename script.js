@@ -18,3 +18,17 @@ window.addEventListener("click", function(event) {
     popup.style.display = "none";
   }
 });
+
+
+const hamburger=document.querySelector(".hamburger")
+const menuBar=document.querySelector(".menu-bar")
+
+hamburger.addEventListener("click",() =>{
+  hamburger.classList.toggle("active")
+  menuBar.classList.toggle("active")
+})
+document.querySelectorAll(".menu-list").forEach(n => n.addEventListener("click",() =>{
+    hamburger.classList.remove("active")
+    menuBar.classList.remove("active")
+
+}))
